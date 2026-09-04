@@ -1,155 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog Tech - Início</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Flamengo - Campeão! | Homenagem</title>
+    <style>
+        :root {
+            --vermelho-fla: #e30613;
+            --preto-fla: #111111;
+            --branco: #ffffff;
+            --dourado: #ffd700;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--preto-fla);
+            color: var(--branco);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--preto-fla), var(--vermelho-fla));
+            text-align: center;
+            padding: 4rem 1rem;
+            border-bottom: 5px solid var(--dourado);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--dourado);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .homenagem-box {
+            background: linear-gradient(135deg, #222, #111);
+            border: 2px solid var(--dourado);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+        }
+
+        .homenagem-box h3 {
+            color: var(--dourado);
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .homenagem-box h2 {
+            color: var(--branco);
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .conquista-card {
+            background-color: #1a1a1a;
+            border: 2px solid var(--vermelho-fla);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(227, 6, 19, 0.3);
+            text-align: center;
+        }
+
+        .conquista-card h2 {
+            color: var(--dourado);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .conquista-card p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--vermelho-fla);
+            color: var(--branco);
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #b5040e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #080808;
+            color: #777;
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
 <body>
-    <!-- Cabeçalho Principal do Blog -->
-    <header class="main-header">
-        <div class="header-content">
-            <h1>Meu Blog Tech</h1>
-            <p>Conhecimento, curiosidades e código sobre tecnologia e programação.</p>
-            
-            <!-- Barra de busca rápida para o blog -->
-            <div class="search-box">
-                <input type="search" placeholder="Buscar posts..." aria-label="Buscar posts no blog">
-            </div>
-        </div>
+
+    <header>
+        <h1>CR Flamengo</h1>
+        <p>Glória Eterna • O Mais Querido do Brasil</p>
     </header>
 
-    <!-- Conteúdo Principal -->
-    <main>
-        <section class="posts-container">
-            <h2 class="section-title">Últimas Postagens</h2>
-
-            <!-- Post 1 -->
-            <article class="post-card">
-                <img src="imagem-blog.png" alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante." loading="lazy">
-                <div class="post-content">
-                    <span class="post-tag">Boas-vindas</span>
-                    <h2>Meu primeiro post</h2>
-                    <p class="artigo-autor">Por: <strong>Marcelo Paludetto</strong> • <time datetime="2026-09-01">01/09/2026</time></p>
-                    <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-                    <div class="post-actions">
-                        <button type="button" aria-label="Amei" class="reaction-btn">❤️ <span class="count">0</span></button>
-                        <button type="button" aria-label="Curti" class="reaction-btn">👍 <span class="count">0</span></button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Post 2 -->
-            <article class="post-card">
-                <img src="imagem-dados.jpg" alt="Ilustração do planeta Terra cercado por elementos digitais, representando a conectividade global." loading="lazy">
-                <div class="post-content">
-                    <span class="post-tag">Curiosidades</span>
-                    <h2>A quantidade de dados no mundo é surreal</h2>
-                    <p class="artigo-autor">Por: <strong>Marcelo Paludetto</strong> • <time datetime="2026-09-02">02/09/2026</time></p>
-                    <p>Estima-se que 90% de todos os dados existentes no mundo hoje foram gerados apenas nos últimos dois anos. Vivemos em uma verdadeira explosão de informação que não para de acelerar.</p>
-                    <p class="artigo-fonte">Fonte: <em>Jornal Opção</em></p>
-                    <div class="post-actions">
-                        <button type="button" aria-label="Amei" class="reaction-btn">❤️ <span class="count">0</span></button>
-                        <button type="button" aria-label="Curti" class="reaction-btn">👍 <span class="count">0</span></button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Post 3 -->
-            <article class="post-card">
-                <img src="imagem-mouse.jpg" alt="Ilustração de uma caixa de madeira com tampa e encaixe." loading="lazy">
-                <div class="post-content">
-                    <span class="post-tag">História Tech</span>
-                    <h2>O primeiro mouse não era de plástico</h2>
-                    <p class="artigo-autor">Por: <strong>Giulliana Cestari</strong> • <time datetime="2026-09-03">03/09/2026</time></p>
-                    <p>Antes do design ergonômico e das luzes RGB, o primeiro mouse do mundo foi construído em madeira! Criado por Douglas Engelbart em 1964, ele tinha o formato de uma caixa quadrada e apenas um botão.</p>
-                    <p class="artigo-fonte">Fonte: <em>TechTudo</em></p>
-                    <div class="post-actions">
-                        <button type="button" aria-label="Amei" class="reaction-btn">❤️ <span class="count">0</span></button>
-                        <button type="button" aria-label="Curti" class="reaction-btn">👍 <span class="count">0</span></button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Post 4 -->
-            <article class="post-card">
-                <img src="imagem-bluetooth.jpg" alt="Ilustração alusiva à história do Bluetooth." loading="lazy">
-                <div class="post-content">
-                    <span class="post-tag">História Tech</span>
-                    <h2>Por que o Bluetooth se chama assim?</h2>
-                    <p class="artigo-autor">Por: <strong>Giulliana Cestari</strong> • <time datetime="2026-09-03">03/09/2026</time></p>
-                    <p>O nome é uma homenagem ao rei viking Harald Blatand Gormsson, que unificou tribos da Escandinávia. Seu apelido era Harald "Bluetooth" porque seus dentes eram tão podres que tinham uma coloração azul escura.</p>
-                    <p class="artigo-fonte">Fonte: <em>TechTudo</em></p>
-                    <div class="post-actions">
-                        <button type="button" aria-label="Amei" class="reaction-btn">❤️ <span class="count">0</span></button>
-                        <button type="button" aria-label="Curti" class="reaction-btn">👍 <span class="count">0</span></button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Post 5 -->
-            <article class="post-card">
-                <img src="imagem-bug.jpg" alt="Ilustração de uma mariposa com asas abertas em tons de marrom." loading="lazy">
-                <div class="post-content">
-                    <span class="post-tag">Curiosidades</span>
-                    <h2>O "Bug" que era um bicho de verdade</h2>
-                    <p class="artigo-autor">Por: <strong>Giulliana Cestari</strong> • <time datetime="2026-09-04">04/09/2026</time></p>
-                    <p>O termo "bug" (inseto) para erros de software ficou famoso em 1947, quando engenheiros encontraram uma mariposa real presa dentro do computador Harvard Mark II, causando uma falha no sistema.</p>
-                    <p class="artigo-fonte">Fonte: <em>Educa Mais Brasil</em></p>
-                    <div class="post-actions">
-                        <button type="button" aria-label="Amei" class="reaction-btn">❤️ <span class="count">0</span></button>
-                        <button type="button" aria-label="Curti" class="reaction-btn">👍 <span class="count">0</span></button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Post 6 -->
-            <article class="post-card">
-                <img src="imagem-webcam.jpg" alt="Ilustração de uma câmera em tripé ao lado de uma cafeteira." loading="lazy">
-                <div class="post-content">
-                    <span class="post-tag">História Tech</span>
-                    <h2>A primeira webcam servia para vigiar café</h2>
-                    <p class="artigo-autor">Por: <strong>Giulliana Cestari</strong> • <time datetime="2026-09-04">04/09/2026</time></p>
-                    <p>Em 1991, pesquisadores da Universidade de Cambridge criaram a primeira webcam para não perderem tempo indo até a cozinha e encontrando a cafeteira vazia. Eles monitoravam o nível do café em tempo real nos seus monitores.</p>
-                    <p class="artigo-fonte">Fonte: <em>BBC</em></p>
-                    <div class="post-actions">
-                        <button type="button" aria-label="Amei" class="reaction-btn">❤️ <span class="count">0</span></button>
-                        <button type="button" aria-label="Curti" class="reaction-btn">👍 <span class="count">0</span></button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Post 7 -->
-            <article class="post-card">
-                <img src="imagem-computador.jpg" alt="Ilustração de uma máquina sobre uma fita com números e símbolos." loading="lazy">
-                <div class="post-content">
-                    <span class="post-tag">Debate</span>
-                    <h2>O primeiro computador não foi a máquina de Turing?</h2>
-                    <p class="artigo-autor">Por: <strong>Felipe Gibertoni</strong> • <time datetime="2026-09-04">04/09/2026</time></p>
-                    <p>Apesar de Alan Turing ser conhecido como pai da computação, ele não criou o primeiro computador. Entre os primeiros, o <strong>Colossus</strong> (projetado por Tommy Flowers) atuou como herói de guerra, enquanto o <strong>ENIAC</strong> é considerado o primeiro programável de uso geral.</p>
-                    <p>E aí, qual você consideraria como o primeiro computador?</p>
-                    <p class="artigo-fonte">Fonte: <em>The National Museum of Computing</em></p>
-                    <div class="post-actions">
-                        <button type="button" aria-label="Amei" class="reaction-btn">❤️ <span class="count">0</span></button>
-                        <button type="button" aria-label="Curti" class="reaction-btn">👍 <span class="count">0</span></button>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Meu Blog Tech. Todos os direitos reservados.</p>
-            <p>Desenvolvido com ❤️ por <strong>Marcelo</strong>, <strong>Giulliana</strong> e <strong>Felipe</strong>.</p>
+    <div class="container">
+        <!-- Seção com o nome solicitado -->
+        <div class="homenagem-box">
+            <h3>Página dedicada à torcedora</h3>
+            <h2>Kamily Vitoria da Silva</h2>
         </div>
+
+        <section class="conquista-card">
+            <h2>Campeão da Copa Libertadores</h2>
+            <p>Com muita raça, amor e paixão, o Mengão pintou a América de vermelho e preto mais uma vez. Uma campanha inesquecível para entrar na história eternamente.</p>
+            <a href="#" class="btn">Ver Campanha</a>
+        </section>
+
+        <section class="conquista-card">
+            <h2>Heptacampeonato Brasileiro</h2>
+            <p>Futebol arte, superioridade em campo e uma Nação inteira empurrando o time rumo a mais um caneco do Brasileirão.</p>
+            <a href="#" class="btn">Saiba Mais</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Página Tributo ao Clube de Regatas do Flamengo. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
-
 </html>
