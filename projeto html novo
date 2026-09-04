@@ -1,377 +1,117 @@
-<!DOCTYPE html> <html lang="pt-br"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Blog Tech | Mengão</title>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<!-- Fontes -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Tech - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<link rel="stylesheet" href="style.css">
+<body>
+    <!-- Cabeçalho Principal do Blog -->
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    </header>
 
-</head> <body>
-<header class="cabecalho">
+    <!-- Conteúdo Principal com a lista de artigos -->
+    <main>
+        <section class="posts-container">
+            <h2 class="section-title">Últimas Postagens</h2>
 
-    <div class="faixa-vermelha"></div>
-
-    <div class="logo-flamengo">
-        <div class="escudo">
-            CRF
-        </div>
-
-        <div>
-            <h1>MEU BLOG TECH</h1>
-            <p>Tecnologia, programação e paixão pelo Mengão 🔴⚫</p>
-        </div>
-    </div>
-
-    <nav>
-        <a href="#posts">Início</a>
-        <a href="#posts">Tecnologia</a>
-        <a href="#sobre">Sobre</a>
-    </nav>
-
-</header>
-
-<main>
-
-    <section class="hero">
-
-        <div>
-            <span class="tag">🔴⚫ BLOG RUBRO-NEGRO</span>
-
-            <h2>
-                Tecnologia com
-                <span>DNA do Mengão</span>
-            </h2>
-
-            <p>
-                Conhecimentos sobre programação, tecnologia e curiosidades
-                para quem gosta de aprender e também não abre mão de torcer
-                pelo Flamengo.
-            </p>
-
-            <a href="#posts" class="botao-hero">
-                VER PUBLICAÇÕES
-            </a>
-        </div>
-
-    </section>
-
-    <section id="posts" class="posts">
-
-        <div class="titulo-secao">
-            <span>CONTEÚDO</span>
-            <h2>Últimos Posts</h2>
-            <p>Confira nossas curiosidades sobre tecnologia.</p>
-        </div>
-
-        <article class="card">
-
-            <img src="imagem-blog.png"
-                alt="Ilustração de tecnologia e educação com livro aberto e cérebro digital.">
-
-            <div class="card-conteudo">
-
-                <span class="categoria">TECNOLOGIA</span>
-
-                <h2>Meu primeiro post</h2>
-
-                <p class="autor">
-                    Por: <strong>Marcelo Paludetto</strong>
-                </p>
-
-                <p>
-                    Boas-vindas ao meu novo blog! Aqui vou compartilhar
-                    dicas de programação e curiosidades da área de tecnologia.
-                </p>
-
-                <div class="acoes">
-                    <button class="like-btn">
-                        ❤️ <span>0</span>
-                    </button>
-
-                    <button class="like-btn">
-                        👍 <span>0</span>
-                    </button>
+            <article>
+                <img src="imagem-blog.png" alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+                <div>
+                    <h2>Meu primeiro post</h2>
+                    <p class="artigo-autor">Por: Marcelo Paludetto</p>
+                    <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>👍 <span>0</span></button>
                 </div>
+            </article>
 
-            </div>
-
-        </article>
-
-
-        <article class="card">
-
-            <img src="imagem-dados.jpg"
-                alt="Ilustração do planeta Terra cercado por elementos digitais.">
-
-            <div class="card-conteudo">
-
-                <span class="categoria">DADOS</span>
-
-                <h2>A quantidade de dados no mundo é surreal</h2>
-
-                <p class="autor">
-                    Por: <strong>Marcelo Paludetto</strong>
-                </p>
-
-                <p>
-                    Estima-se que uma enorme quantidade dos dados existentes
-                    no mundo tenha sido criada nos últimos anos. Vivemos em
-                    uma verdadeira explosão de informação que não para de acelerar.
-                </p>
-
-                <p class="fonte">
-                    Fonte: Jornal Opção
-                </p>
-
-                <div class="acoes">
-                    <button class="like-btn">
-                        ❤️ <span>0</span>
-                    </button>
-
-                    <button class="like-btn">
-                        👍 <span>0</span>
-                    </button>
+            <article>
+                <img src="imagem-dados.jpg" alt="Ilustração do planeta Terra cercado por elementos digitais, representando a conectividade global e a tecnologia.">
+                <div>
+                    <h2>A quantidade de dados no mundo é surreal</h2>
+                    <p class="artigo-autor">Por: Marcelo Paludetto</p>
+                    <p>Estima-se que 90% de todos os dados existentes no mundo hoje foram gerados apenas nos últimos dois anos. Vivemos em uma verdadeira explosão de informação que não para de acelerar.</p>
+                    <p class="artigo-fonte">Fonte: Jornal Opção</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>👍 <span>0</span></button>
                 </div>
+            </article>
 
-            </div>
-
-        </article>
-
-
-        <article class="card">
-
-            <img src="imagem-mouse.jpg"
-                alt="Ilustração de um antigo mouse de computador feito de madeira.">
-
-            <div class="card-conteudo">
-
-                <span class="categoria">HISTÓRIA</span>
-
-                <h2>O primeiro mouse não era de plástico</h2>
-
-                <p class="autor">
-                    Por: <strong>Giulliana Cestari</strong>
-                </p>
-
-                <p>
-                    Antes do design ergonômico e das luzes RGB, o primeiro
-                    mouse do mundo foi construído em madeira! Criado por
-                    Douglas Engelbart em 1964, ele tinha o formato de uma
-                    caixa quadrada e apenas um botão.
-                </p>
-
-                <p class="fonte">
-                    Fonte: TechTudo
-                </p>
-
-                <div class="acoes">
-                    <button class="like-btn">
-                        ❤️ <span>0</span>
-                    </button>
-
-                    <button class="like-btn">
-                        👍 <span>0</span>
-                    </button>
+            <article>
+                <img src="imagem-mouse.jpg" alt="Ilustração de uma caixa de madeira com tampa e encaixe, representando armazenamento ou organização.">
+                <div>
+                    <h2>O primeiro mouse não era de plástico</h2>
+                    <p class="artigo-autor">Por: Giulliana Cestari</p>
+                    <p>Antes do design ergonômico e das luzes RGB, o primeiro mouse do mundo foi construído em madeira! Criado por Douglas Engelbart em 1964, ele tinha o formato de uma caixa quadrada e apenas um botão.</p>
+                    <p class="artigo-fonte">Fonte: TechTudo.</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>👍 <span>0</span></button>
                 </div>
+            </article>
 
-            </div>
-
-        </article>
-
-
-        <article class="card">
-
-            <img src="imagem-bluetooth.jpg"
-                alt="Ilustração relacionada à origem do nome Bluetooth.">
-
-            <div class="card-conteudo">
-
-                <span class="categoria">CURIOSIDADE</span>
-
-                <h2>Por que o Bluetooth se chama assim?</h2>
-
-                <p class="autor">
-                    Por: <strong>Giulliana Cestari</strong>
-                </p>
-
-                <p>
-                    O nome é uma homenagem ao rei viking Harald Blatand
-                    Gormsson, conhecido pelo apelido de Harald Bluetooth.
-                </p>
-
-                <p class="fonte">
-                    Fonte: TechTudo
-                </p>
-
-                <div class="acoes">
-                    <button class="like-btn">
-                        ❤️ <span>0</span>
-                    </button>
-
-                    <button class="like-btn">
-                        👍 <span>0</span>
-                    </button>
+            <article>
+                <img src="imagem-bluetooth.jpg" alt="Ilustração de dentes com coloração azul apresentando cáries, rachaduras e manchas próximas à gengiva.">
+                <div>
+                    <h2>Por que o Bluetooth se chama assim?</h2>
+                    <p class="artigo-autor">Por: Giulliana Cestari</p>
+                    <p>O nome é uma homenagem ao rei viking Harald Blatand Gormsson, que unificou tribos da Escandinávia. Seu apelido era Harald "Bluetooth" porque seus dentes eram tão podres que tinham uma coloração azul escura.</p>
+                    <p class="artigo-fonte">Fonte: TechTudo</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>👍 <span>0</span></button>
                 </div>
+            </article>
 
-            </div>
-
-        </article>
-
-
-        <article class="card">
-
-            <img src="imagem-bug.jpg"
-                alt="Ilustração de uma mariposa representando um bug de computador.">
-
-            <div class="card-conteudo">
-
-                <span class="categoria">PROGRAMAÇÃO</span>
-
-                <h2>O "Bug" que era um bicho de verdade</h2>
-
-                <p class="autor">
-                    Por: <strong>Giulliana Cestari</strong>
-                </p>
-
-                <p>
-                    O termo "bug" para erros de software ficou famoso em
-                    1947, quando engenheiros encontraram uma mariposa presa
-                    dentro do computador Harvard Mark II.
-                </p>
-
-                <p class="fonte">
-                    Fonte: Educa Mais Brasil
-                </p>
-
-                <div class="acoes">
-                    <button class="like-btn">
-                        ❤️ <span>0</span>
-                    </button>
-
-                    <button class="like-btn">
-                        👍 <span>0</span>
-                    </button>
+            <article>
+                <img src="imagem-bug.jpg" alt="Ilustração de uma mariposa com asas abertas em tons de marrom, com padrões circulares nas asas.">
+                <div>
+                    <h2>O "Bug" que era um bicho de verdade</h2>
+                    <p class="artigo-autor">Por: Giulliana Cestari</p>
+                    <p>O termo "bug" (inseto) para erros de software ficou famoso em 1947, quando engenheiros encontraram uma mariposa real presa dentro do computador Harvard Mark II, causando uma falha no sistema.</p>
+                    <p class="artigo-fonte">Fonte: Educa Mais Brasil</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>👍 <span>0</span></button>
                 </div>
+            </article>
 
-            </div>
-
-        </article>
-
-
-        <article class="card">
-
-            <img src="imagem-webcam.jpg"
-                alt="Ilustração de uma webcam ao lado de uma cafeteira.">
-
-            <div class="card-conteudo">
-
-                <span class="categoria">INTERNET</span>
-
-                <h2>A primeira webcam servia para vigiar café</h2>
-
-                <p class="autor">
-                    Por: <strong>Giulliana Cestari</strong>
-                </p>
-
-                <p>
-                    Em 1991, pesquisadores da Universidade de Cambridge
-                    criaram uma webcam para monitorar o nível de café
-                    disponível em uma cafeteira.
-                </p>
-
-                <p class="fonte">
-                    Fonte: BBC
-                </p>
-
-                <div class="acoes">
-                    <button class="like-btn">
-                        ❤️ <span>0</span>
-                    </button>
-
-                    <button class="like-btn">
-                        👍 <span>0</span>
-                    </button>
+            <article>
+                <img src="imagem-webcam.jpg" alt="Ilustração de uma câmera em tripé ao lado de uma cafeteira preparando café.">
+                <div>
+                    <h2>A primeira webcam servia para vigiar café</h2>
+                    <p class="artigo-autor">Por: Giulliana Cestari</p>
+                    <p>Em 1991, pesquisadores da Universidade de Cambridge criaram a primeira webcam para não perderem tempo indo até a cozinha e encontrando a cafeteira vazia. Eles monitoravam o nível do café em tempo real nos seus monitores.</p>
+                    <p class="artigo-fonte">Fonte: BBC</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>👍 <span>0</span></button>
                 </div>
+            </article>
 
-            </div>
-
-        </article>
-
-
-        <article class="card">
-
-            <img src="imagem-computador.jpg"
-                alt="Ilustração de um computador antigo representando o processamento de dados.">
-
-            <div class="card-conteudo">
-
-                <span class="categoria">COMPUTAÇÃO</span>
-
-                <h2>O primeiro computador não foi a máquina de Turing?</h2>
-
-                <p class="autor">
-                    Por: <strong>Felipe Gibertoni</strong>
-                </p>
-
-                <p>
-                    Apesar de Alan Turing ser conhecido como uma das grandes
-                    figuras da computação, ele não criou o primeiro computador.
-                    Entre os primeiros computadores estão o Colossus e o ENIAC.
-                </p>
-
-                <p class="fonte">
-                    Fonte: The National Museum of Computing
-                </p>
-
-                <div class="acoes">
-                    <button class="like-btn">
-                        ❤️ <span>0</span>
-                    </button>
-
-                    <button class="like-btn">
-                        👍 <span>0</span>
-                    </button>
+            <article>
+                <img src="imagem-computador.jpg" alt="Ilustração de uma máquina sobre uma fita com números e símbolos, representando o processamento de dados.">
+                <div>
+                    <h2>O primeiro computador não foi a máquina de Turing?</h2>
+                    <p class="artigo-autor">Por: Felipe Gibertoni</p>
+                    <p>Apesar de Alan Turing ser conhecido como pai da computação, ele não criou o primeiro computador. Entre os primeiros computadores, um deles foi chamado Colossus projetado por Tommy Flowers durante a Segunda Guerra Mundial e também, praticamente na mesma época, o ENIAC foi projetado por J. Presper Eckert e John Mauchly.<br><br>Embora o Colossus tenha funcionado antes como um "herói de guerra" especializado, o ENIAC é frequentemente chamado de "pai" por ser o primeiro programável de uso geral.<br><br>E aí, qual você consideraria como o primeiro computador?</p>
+                    <p class="artigo-fonte">Fonte: The National Museum of Computing</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>👍 <span>0</span></button>
                 </div>
+            </article>
+        </section>
+    </main>
 
-            </div>
+    <!-- Rodapé adicionado para fechar o layout de página inicial -->
+    <footer>
+        <p>&copy; 2026 Meu Blog Tech. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ por Marcelo, Giulliana e Felipe.</p>
+    </footer>
 
-        </article>
+    <script src="script.js"></script>
+</body>
 
-    </section>
-
-    <section id="sobre" class="sobre">
-
-        <span>SOBRE O BLOG</span>
-
-        <h2>Conhecimento é o nosso combustível.</h2>
-
-        <p>
-            Um espaço para compartilhar tecnologia, programação e
-            curiosidades de um jeito simples e divertido.
-        </p>
-
-    </section>
-
-</main>
-
-<footer>
-
-    <div class="linha-vermelha"></div>
-
-    <h2>MEU BLOG TECH</h2>
-
-    <p>
-        Tecnologia + Programação + Mengão 🔴⚫
-    </p>
-
-    <p class="copyright">
-        © 2026 Meu Blog Tech. Todos os direitos reservados.
-    </p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body> </html>
+</html>
